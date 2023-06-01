@@ -45,7 +45,6 @@ function Home() {
       : 0
   );
   const [response, setResponse] = useState(mock);
-  const teste = "aiaiai";
   function getMedia(temp, umid) {
     setTempMedia(
       temp.reduce((total, valor) => total + valor, 0) / tempStore.length
@@ -65,7 +64,6 @@ function Home() {
     client.on("connect", () => {
       console.log("Conectado ao broker MQTT");
       client.subscribe("esp32/gabriel/temp");
-      client.publish("esp32/gabriel/temp", JSON.stringify(teste));
     });
 
     client.on("message", (topic, message) => {

@@ -43,7 +43,9 @@ const layout = {
       data={[
         {
           x: value.map((e) => e.time.split(" ")[4]),
-          y: value.map((e)=> {return e.value}),
+          y: value.map((e)=> {
+            console.log("a")
+            return e.value}),
           type: "lines",
           marker: { color: "#4A88C1" },
         },
