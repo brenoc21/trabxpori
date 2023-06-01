@@ -77,7 +77,6 @@ function Switch({turnOn, turnOff}){
   return (
     <CheckBoxWrapper>
       <CheckBoxInput id="checkbox" type="checkbox" onChange={()=> { 
-        console.log(bool)
         setBool(!bool)
         bool ? turnOn() : turnOff()
         }} />

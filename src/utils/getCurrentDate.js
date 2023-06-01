@@ -7,7 +7,6 @@ export function getCurrentDate(separator) {
   let hour = newDate.getHours();
   let minutes = newDate.getMinutes();
   let seconds = newDate.getSeconds();
-    console.log("hour:", hour)
   return `${date}${separator}${
     month < 10 ? `${getMonthName(month)}` : `${month}`
   }${separator}${year}${separator}${getWeekday(weekday)}${separator}${hour}:${minutes}:${seconds}`;

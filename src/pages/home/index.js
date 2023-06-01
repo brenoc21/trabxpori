@@ -19,6 +19,7 @@ import {
   Header,
   HeaderTitle,
   HeaderSub,
+  Footer,
 } from "./styles";
 import api from "../../services/api";
 import Switch from "../../components/switch";
@@ -171,6 +172,7 @@ function Home() {
       <CardContainer>
         <TemperatureChart name={"Umidade"} value={umidStore}></TemperatureChart>
       </CardContainer>
+      <Footer>© {getCurrentDate(" ").split(" ")[2]} Breno Colaço and Gabriel Aderaldo. All Rights Reserved.</Footer>
       {/* <ButtonRow>
       <Button id="liga" color='#41844C' onClick={()=> {turnOn()}}>On</Button>
       <Button id="desliga" color='#C14A4A' onClick={()=> {turnOff()}}>Off</Button>

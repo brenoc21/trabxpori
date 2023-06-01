@@ -72,3 +72,17 @@ font-weight: 400;
 font-family: "Poppins";
 
 `
+
+export const Footer = styled.div`
+width: 100%;
+padding: 20px;
+border-top: 1px solid rgba(0,0,0, 0.2);
+display: flex;
+flex-direction: row;
+font-size: 12px;
+align-items: center;
+justify-content: center;
+`
+export const Bold = styled.div`
+font-weight: bold;
+`
