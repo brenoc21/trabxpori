@@ -53,9 +53,9 @@ function Home() {
       umid.reduce((total, valor) => total + valor, 0) / umidStore.length
     );
   }
-  // useEffect(()=> {
-  //   api.get().then((res)=> {setResponse(res.data)})
-  // }, [])
+  useEffect(()=> {
+    api.get().then((res)=> {setResponse(res.data)})
+  }, [])
   useEffect(() => {
     console.log(JSON.parse(localStorage.getItem("data")));
   }, []);
